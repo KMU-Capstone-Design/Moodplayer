@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,5 +58,9 @@ public class Select_page extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Search_page.class );
         startActivity(intent);
         finish();
+    }
+    public void buttonClicked1(View v){
+        TextView textView4 = findViewById(R.id.textView4);
+        textView4.setText("1. 사진찍기      2. 갤러리\n3. 무드리스트      4.검색 ");
     }
 }

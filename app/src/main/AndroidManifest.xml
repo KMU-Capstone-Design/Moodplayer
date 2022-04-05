@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,18 +16,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealProject">
         <activity
+            android:name=".SongWebView"
+            android:exported="false" />
+        <activity
             android:name=".Load_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Select_page"/>
-        <activity android:name=".List_page"/>
+        <activity android:name=".Select_page" />
+        <activity android:name=".List_page" />
+
         <provider
-            android:authorities="${applicationId"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -33,4 +40,5 @@
                 android:resource="@xml/provider_paths" />
         </provider>
     </application>
+
 </manifest>
