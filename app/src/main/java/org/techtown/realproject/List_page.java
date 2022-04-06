@@ -47,9 +47,11 @@ public class List_page extends AppCompatActivity {
         arrayGroup.add(parent1);
 
         Parent parent2 = new Parent("슬픈");
+        parent2.child.add(new Child("알리 - 지우개","https://www.youtube.com/watch?v=BKq7C2vdvq0"));
         arrayGroup.add(parent2);
 
         Parent parent3 = new Parent("신나는");
+        parent3.child.add(new Child("김연자 - 아모르파티","https://www.youtube.com/watch?v=YLwJr8ZsGHw"));
         arrayGroup.add(parent3);
     }
     public void backspaceClicked(View v){
