@@ -1,33 +1,38 @@
 package org.techtown.realproject;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class List_page extends AppCompatActivity {
+    ArrayList<Parent> arrayGroup = new ArrayList<>();
     ExpandableListView expandableListView;
-    private ArrayList<Parent> arrayGroup = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
         Intent intent = getIntent();
-
         expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
-
         makeData();
-
         expandableAdaptor adaptor = new expandableAdaptor(this,arrayGroup);
         expandableListView.setAdapter(adaptor);
-
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int groupPosition, int childPosition, long id) {
@@ -39,7 +44,6 @@ public class List_page extends AppCompatActivity {
             }
         });
     }
-
     public void makeData(){
         Parent parent1 = new Parent("설레는");
         parent1.child.add(new Child("아이유 - 금요일에 만나요","https://youtu.be/EiVmQZwJhsA"));

@@ -3,19 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../Moodplayer/app/src/main/res/layout/activity_list.xml" value="0.2453125" />
-        <entry key="../Moodplayer/app/src/main/res/layout/activity_load.xml" value="0.25677083333333334" />
-        <entry key="../Moodplayer/app/src/main/res/layout/activity_select.xml" value="0.25677083333333334" />
-        <entry key="../Moodplayer/app/src/main/res/layout/child_list.xml" value="0.13134057971014493" />
-        <entry key="../Moodplayer/app/src/main/res/layout/parent_list.xml" value="0.13134057971014493" />
         <entry key="..\:/Users/KSB/AndroidStudioProjects/Moodplayer/app/src/main/res/xml/provider_paths.xml" value="0.1" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/mood.xml" value="0.169" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/mood_icon.xml" value="0.2215" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/round.xml" value="0.1" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_list.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_load.xml" value="0.23489583333333333" />
-        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_select.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_list.xml" value="0.17119565217391305" />
-        <entry key="app/src/main/res/layout/activity_song_web_view.xml" value="0.17119565217391305" />
-        <entry key="app/src/main/res/layout/child_list.xml" value="0.17119565217391305" />
-        <entry key="app/src/main/res/layout/parent_list.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_select.xml" value="0.2" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/child_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/parent_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/search_list.xml" value="0.1" />
       </map>
     </option>
   </component>
