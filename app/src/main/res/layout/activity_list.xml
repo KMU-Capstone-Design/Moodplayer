@@ -46,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:background="?attr/actionModeCloseDrawable"
         android:backgroundTint="#A67F78"
         android:onClick="backspaceClicked"

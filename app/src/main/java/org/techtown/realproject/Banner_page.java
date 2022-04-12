@@ -93,4 +93,14 @@ public class Banner_page extends AppCompatActivity {
         }
         send_image.setEnabled(true);
     }
+    public void backspaceClicked(View v){
+        Intent intent = new Intent(getApplicationContext(),Select_page.class);
+        startActivity(intent);
+        finish();
+    }
+    public void homeClicked(View v){
+        Intent intent = new Intent(getApplicationContext(),Select_page.class);
+        startActivity(intent);
+        finish();
+    }
 }

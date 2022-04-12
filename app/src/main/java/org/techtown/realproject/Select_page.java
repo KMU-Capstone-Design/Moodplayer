@@ -42,14 +42,14 @@ public class Select_page extends AppCompatActivity {
 
     }
     public void imagebuttonClicked1(View v){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivity(intent);
+        //finish();
+    }
+    public void imagebuttonClicked2(View v){
         Intent intent = new Intent(getApplicationContext(), Banner_page.class);
         startActivity(intent);
         finish();
-    }
-    public void imagebuttonClicked2(View v){
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-        startActivity(intent);
-        //finish();
     }
     public void imagebuttonClicked3(View v){
         Intent intent = new Intent(getApplicationContext(), List_page.class);
