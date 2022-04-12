@@ -26,15 +26,15 @@
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="380dp"
-        android:layout_height="491dp"
+        android:layout_height="513dp"
         android:background="#A67F78"
         android:nestedScrollingEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.644" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
@@ -75,14 +75,18 @@
 
     <SearchView
         android:id="@+id/search_view"
-        android:layout_width="365dp"
-        android:layout_height="58dp"
+        android:layout_width="379dp"
+        android:layout_height="60dp"
         android:background="#A67F78"
         android:backgroundTint="#A67F78"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/expandableListView"
+        android:queryHint="분위기 키워드를 입력하세요"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.06"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

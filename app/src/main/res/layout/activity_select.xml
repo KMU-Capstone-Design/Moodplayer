@@ -82,7 +82,7 @@
         android:layout_height="51dp"
         android:backgroundTint="@color/white"
         android:gravity="center"
-        android:text="* 원하시는 버튼을 눌러주세요 *"
+        android:text="* 원하는 버튼을 눌러주세요 *"
         android:textColor="#A67F78"
         android:textSize="16sp"
         android:textStyle="bold"

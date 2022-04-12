@@ -29,7 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Select_page" />
-        <activity android:name=".List_page" />
+        <activity android:name=".List_page"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Banner_page"/>
 
         <provider

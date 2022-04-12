@@ -7,10 +7,12 @@
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/mood.xml" value="0.169" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/mood_icon.xml" value="0.2215" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/drawable/round.xml" value="0.1" />
-        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_banner.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_list.xml" value="0.264" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_load.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/activity_select.xml" value="0.2" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/child_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/keyword_item.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/parent_list.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/SY/AndroidStudioProjects/RealProject/app/src/main/res/layout/search_list.xml" value="0.1" />
       </map>

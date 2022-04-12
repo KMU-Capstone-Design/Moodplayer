@@ -33,6 +33,7 @@ public class List_page extends AppCompatActivity {
         makeData();
         expandableAdaptor adaptor = new expandableAdaptor(this,arrayGroup);
         expandableListView.setAdapter(adaptor);
+        searchKeyword();
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int groupPosition, int childPosition, long id) {
@@ -67,5 +68,35 @@ public class List_page extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),Select_page.class);
         startActivity(intent);
         finish();
+    }
+    public void searchKeyword(){
+        SearchView searchView;
+        searchView = (SearchView) findViewById((R.id.search_view));
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchView.setIconified(false);
+            }
+        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) { //입력받은 문자열 처리하는 이벤트
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) { //입력란의 문자열이 바뀔 때 발생하는 이벤트
+                ArrayList<Parent> filterKeyword = new ArrayList<>();
+                for(int i=0; i<arrayGroup.size();i++){
+                    Parent parent = arrayGroup.get(i);
+                    if(parent.getTv_parent().toLowerCase().contains(s.toLowerCase())) {
+                        filterKeyword.add(parent);
+                    }
+                }
+                expandableAdaptor adapter = new expandableAdaptor(getApplicationContext(),filterKeyword);
+                expandableListView.setAdapter(adapter);
+                return true;
+            }
+        });
     }
 }
