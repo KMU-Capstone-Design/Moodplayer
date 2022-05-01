@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E1DCD9"
-    >
+    android:background="#E1DCD9">
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -56,35 +55,73 @@
 
     <ImageView
         android:id="@+id/imgVwSelected"
-        android:layout_width="391dp"
-        android:layout_height="501dp"
+        android:layout_width="379dp"
+        android:layout_height="473dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/load_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="불러오기"
+        android:id="@+id/btn_tv1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/circle"
+        android:onClick="btn_tv1Clicked"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tv2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <Button
-        android:id="@+id/send_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="보내기"
+        android:id="@+id/btn_tv2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="115dp"
+        android:background="@drawable/circle"
+        android:onClick="btn_tv2Clicked"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tv3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/btn_tv3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="215dp"
+        android:background="@drawable/circle"
+        android:onClick="btn_tv3Clicked"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tv4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <ImageButton
+        android:id="@+id/btn_tv4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circle"
+        android:onClick="btn_tv4Clicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
